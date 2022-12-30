@@ -7,7 +7,8 @@
 	model = "MediaTek LinkIt Smart 7688";
 
 	chosen {
-		bootargs = "console=ttyS2,57600";
+		//bootargs = "console=ttyS2,57600";//openwrt默认调试串口使用ttyS2
+		bootargs = "console=ttyS0,57600";  //uboot的调试串口默认使用ttyS0
 	};
 
 	memory@0 {
